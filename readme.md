@@ -7,7 +7,7 @@ Esta é uma API de consulta para o desafio de React. Ela fornece os oito livros 
 Após o deploy no Render, substitua `URL_DO_RENDER` pela URL pública do serviço:
 
 ```text
-URL_DO_RENDER/api/livros
+https://pagina-42-livros-api.onrender.com/api/livros
 ```
 
 ## Chave de API da turma
@@ -23,7 +23,7 @@ FpHaY6No10dqse01yRYt2ZY-ELqp8Kw4FI4eMXAj7_E
 Faça uma requisição `GET` para `/api/livros` e envie a chave no cabeçalho `x-api-key`.
 
 ```js
-const resposta = await fetch("URL_DO_RENDER/api/livros", {
+const resposta = await fetch("https://pagina-42-livros-api.onrender.com/api/livros", {
   headers: {
     "x-api-key": "FpHaY6No10dqse01yRYt2ZY-ELqp8Kw4FI4eMXAj7_E",
   },
@@ -48,7 +48,7 @@ A resposta é um array de objetos. Cada livro tem `id`, `titulo`, `autor`, `cate
 
 ## Verificar a API
 
-O endereço `URL_DO_RENDER/health` é público e responde:
+O endereço `https://pagina-42-livros-api.onrender.com/health` é público e responde:
 
 ```json
 { "status": "ok" }
@@ -59,4 +59,4 @@ O endereço `URL_DO_RENDER/health` é público e responde:
 1. Publique esta pasta em um repositório GitHub, GitLab ou Bitbucket.
 2. No Render, crie um Blueprint a partir do repositório. O arquivo `render.yaml` já contém a configuração do serviço.
 3. Quando o Render pedir `API_KEY`, cole a chave da turma indicada acima.
-4. Após o deploy, copie a URL pública do serviço e substitua `URL_DO_RENDER` neste README antes de disponibilizá-lo.
+4. O deploy inicial já foi feito. O Render atualizará o serviço automaticamente quando novas alterações forem enviadas para `main`.
