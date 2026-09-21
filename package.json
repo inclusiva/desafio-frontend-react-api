@@ -1,0 +1,13 @@
+{
+  "name": "pagina-42-api",
+  "private": true,
+  "version": "1.0.0",
+  "description": "API didática de leitura da Livraria Página 42",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
